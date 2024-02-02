@@ -1,6 +1,6 @@
 # Prerequisites
-- Linux or Windows
-- Python 3.8+
+- Linux
+- Python 3.8
 - NVIDIA GPU + CUDA CuDNN
 - anaconda virtual environment
   ```
