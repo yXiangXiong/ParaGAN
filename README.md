@@ -68,9 +68,8 @@ python test.py --dataroot icassp2024/augmented_covid --dataset_name covid --num_
 --generator_B2A checkpoints/covid/cyclegan_convnext_tiny/best_netG_A2B.pth \
 --classifier checkpoints/covid/cyclegan_convnext_tiny/best_netC.pth \
 --project_name cyclegan_convnext_tiny --model_name convnext_tiny --gpu_ids 0
-  ```
+
 if you want to generate the tsne figure and the heatmaps, use the followed two lines in test.py:
-  ```
     # test_gd(module, data_gd_loader, data_c_loader, memory_allocation, opt)
     # test_heatmap(module, data_gd_loader, data_c_loader, memory_allocation, opt)
   ```
