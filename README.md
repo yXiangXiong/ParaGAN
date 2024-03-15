@@ -20,27 +20,21 @@
 ├─train├─X
 │      │  001non-covid19.png
 │      │  002non-covid19.png
-│      │  003non-covid19.png
 │      ├─Y
 │      │  001covid19.png
 │      │  002covid19.png
-│      │  003covid19.png
 ├─valid├─X
 │      │  001non-covid19.png
 │      │  002non-covid19.png
-│      │  003non-covid19.png
 │      ├─Y
 │      │  001covid19.png
 │      │  002covid19.png
-│      │  003covid19.png
 ├─test ├─X
 │      │  001non-covid19.png
 │      │  002non-covid19.png
-│      │  003non-covid19.png
 │      ├─Y
 │      │  001covid19.png
 │      │  002covid19.png
-│      │  003covid19.png
 ```
 # Pretrain the binary classification networks
 classification_hingeloss_preaugment
@@ -49,5 +43,6 @@ python train.py --dataroot icassp2024/augmented_covid --dataset_name covid \
 -project_name convnext_tiny --model_name convnext_tiny --gpu_ids 0,1
 
 python test.py --dataroot icassp2024/augmented_covid --dataset_name covid \
--project_name convnext_tiny --model_name convnext_tiny --gpu_ids 0,1
+--classifier checkpoints/covid/convnext_tiny/convnext_tiny_best_netC.pth \
+-project_name convnext_tiny --model_name convnext_tiny --gpu_ids 0
   ```
