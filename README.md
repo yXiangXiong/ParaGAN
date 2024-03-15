@@ -40,20 +40,33 @@
 classification_hingeloss_preaugment
   ```
 python train.py --dataroot icassp2024/augmented_covid --dataset_name covid --num_classes 1 \
--project_name convnext_tiny --model_name convnext_tiny --gpu_ids 0,1
+--project_name convnext_tiny --model_name convnext_tiny --gpu_ids 0,1
 
 python test.py --dataroot icassp2024/augmented_covid --dataset_name covid --num_classes 1 \
 --classifier checkpoints/covid/convnext_tiny/convnext_tiny_best_netC.pth \
--project_name convnext_tiny --model_name convnext_tiny --gpu_ids 0
+--project_name convnext_tiny --model_name convnext_tiny --gpu_ids 0
   ```
 
 classification_cross-entropy_preaugment
   ```
 python train.py --dataroot icassp2024/augmented_covid --dataset_name covid --num_classes 2 \
--project_name convnext_tiny --model_name convnext_tiny --gpu_ids 0,1
+--project_name convnext_tiny --model_name convnext_tiny --gpu_ids 0,1
 
 python test.py --dataroot icassp2024/augmented_covid --dataset_name covid --num_classes 2 \
 --classifier checkpoints/covid/convnext_tiny/convnext_tiny_best_netC.pth \
--project_name convnext_tiny --model_name convnext_tiny --gpu_ids 0
+--project_name convnext_tiny --model_name convnext_tiny --gpu_ids 0
+  ```
+
+ParaGAN
+  ```
+python train.py --dataroot icassp2024/augmented_covid --dataset_name covid --num_classes 1 \
+--lambda_fake 0.2 --lambda_vertical 0.1 --classifier ./pretrained_covid/convnext_tiny_best_netC.pth \
+--project_name cyclegan_convnext_tiny --model_name convnext_tiny --gpu_ids 0,1
+
+python test.py --dataroot icassp2024/augmented_covid --dataset_name covid --num_classes 1 \
+--generator_A2B checkpoints/covid/cyclegan_convnext_tiny/best_netG_A2B.pth \
+--generator_B2A checkpoints/covid/cyclegan_convnext_tiny/best_netG_A2B.pth \
+--classifier checkpoints/covid/cyclegan_convnext_tiny/best_netC.pth \
+--project_name cyclegan_convnext_tiny --model_name convnext_tiny --gpu_ids 0
   ```
 
