@@ -16,3 +16,8 @@
   ```
 
 # Pretrain the binary classification networks
+classification_hingeloss_preaugment
+  ```
+python train.py --dataroot icassp2024/augmented_covid --dataset_name covid \
+-project_name convnext_tiny --model_name convnext_tiny --gpu_ids 0,1
+  ```
