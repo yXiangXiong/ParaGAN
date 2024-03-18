@@ -57,7 +57,7 @@ python test.py --dataroot icassp2024/augmented_covid --dataset_name covid --num_
 --project_name convnext_tiny --model_name convnext_tiny --gpu_ids 0
   ```
 
-VACGAN
+ACGAN
   ```
 python train.py --dataroot icassp2024/augmented_covid --dataset_name covid --num_classes 2 \
 --project_name acgan_convnext_tiny --model_name convnext_tiny --gpu_ids 0,1
@@ -66,8 +66,19 @@ python test.py --dataroot icassp2024/augmented_covid --dataset_name covid --num_
 --generator checkpoints/coivd/acgan_convnext_tiny/best_netG.pth
 --classifier checkpoints/covid/acgan_convnext_tiny/best_netC.pth
 --project_name acgan_convnext_tiny --model_name convnext_tiny --gpu_ids 0
-
   ```
+
+VACGAN
+  ```
+python train.py --dataroot icassp2024/augmented_covid --dataset_name covid --num_classes 2 \
+--project_name vacgan_convnext_tiny --model_name convnext_tiny --gpu_ids 0,1
+
+python test.py --dataroot icassp2024/augmented_covid --dataset_name covid --num_classes 2 \
+--generator checkpoints/coivd/vacgan_convnext_tiny/best_netG.pth
+--classifier checkpoints/covid/vacgan_convnext_tiny/best_netC.pth
+--project_name vacgan_convnext_tiny --model_name convnext_tiny --gpu_ids 0
+  ```
+
 ParaGAN
   ```
 python train.py --dataroot icassp2024/augmented_covid --dataset_name covid --num_classes 1 \
