@@ -8,7 +8,7 @@ I deeply regret to forget getting your contact information.
 
 <p align='left'>
   <img src='korea_coex/1.jpg' width='200'/>
-  <img src='korea_coex/2.jpg' width='340'/>
+  <img src='korea_coex/2.jpg' width='350'/>
   <img src='korea_coex/3.jpg' width='340'/>
 </p>
 
