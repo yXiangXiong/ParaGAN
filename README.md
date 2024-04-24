@@ -7,8 +7,8 @@ I plan to seek a postdoctoral position in South Korea or Japan after graduation.
 I deeply regret to forget getting your contact information.
 
 <p align='left'>
-  <img src='korea_coex/1.jpg' width='150'/>
-  <img src='korea_coex/2.jpg' width='320'/>
+  <img src='korea_coex/1.jpg' width='160'/>
+  <img src='korea_coex/2.jpg' width='300'/>
   <img src='korea_coex/3.jpg' width='300'/>
 </p>
 
