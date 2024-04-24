@@ -1,10 +1,5 @@
 # Important:
-ICASSP 2024. Paper: A Parameterized Generative Adversarial Network Using Cyclic Projection for Explainable Medical Image Classification.
-
-I explained the poster to a South Korea girl at the icassp 2024 Seoul conference and I forgot to add her contact information.
-If you are interested in my article and see code here again, you can keep in touch with me at my email: xiangyu.xiong.adc@gmail.com.
-I plan to seek a postdoctoral position in South Korea or Japan after graduation.
-I deeply regret to forget getting your contact information.
+ICASSP 2024 Poster. Paper: A Parameterized Generative Adversarial Network Using Cyclic Projection for Explainable Medical Image Classification.
 
 <p align='left'>
   <img src='korea_coex/1.jpg' width='170'/>
