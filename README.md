@@ -6,6 +6,12 @@ If you are interested in my article and see code here again, you can keep in tou
 I plan to seek a postdoctoral position in South Korea or Japan after graduation.
 I deeply regret to forget getting your contact information.
 
+<p align='left'>
+  <img src='korea_coex/1.png' width='106'/>
+  <img src='korea_coex/2.png' width='106'/>
+  <img src='korea_coex/3.png' width='106'/>
+</p>
+
 # Prerequisites
 - Linux
 - Python 3.8
