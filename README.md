@@ -1,3 +1,8 @@
+# Important:
+I explained the poster to a Korean girl at the icassp 2024 Seoul conference and I forgot to add her contact information.
+If you are interested in my article, you can keep in touch with me at my email: xiangyu.xiong.adc@gmail.com.
+I plan to seek a postdoctoral position in South Korea or Japan after graduation.
+
 # Prerequisites
 - Linux
 - Python 3.8
